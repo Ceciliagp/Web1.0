@@ -1,0 +1,326 @@
+/*
+selector{
+
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+}
+*/ /*SOY UN COMENTARIO*/
+:root{  /**Colores a usar **/
+
+    --blanco:#ffffff;
+    --negro:#212121;
+    --purple:#42012d;
+    --rosa:#f849af;
+    --verde:#b2c504;
+    --azul:#0783ff;
+    --agua:#08617c;
+    --fluor: #e8f762;
+    --marino: #b6257e;
+    --pardo: #db90d8;
+    --pink: #fd46f7;
+    --gris: #038d86;
+    --moradobajo: #a68aa8;
+    --verdebajo: #467562;
+    --arena:#a55e6d;
+
+
+}
+
+html{
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, var (var(--verde))0%, var(--blanco)80%);
+    min-height: 100%;
+    position: relative;
+    
+}
+    
+body{
+    
+    background-color: var(--gris);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, var (var(--gris))0%, var(--gris)100%);
+    margin: 0;
+    margin-bottom: 40px;
+}
+    
+/************************************************HEADER***********************************************/
+
+header .main-title{
+    
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 6rem;
+    color: var(--blanco);
+}
+    
+/****************************************NAVEGADOR PRINCIPAL*****************************************/
+    
+.menu{
+    
+    background-color: var(--moradobajo);
+    margin: auto;
+
+}
+
+.navegacion a{
+    
+    padding: 1.5rem;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+}
+        
+.navegacion a:hover{
+        
+    background-color: var(--pardo);
+    color: var(--negro);
+}
+        
+.navegacion {
+        
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+        
+}
+    
+/********************************************ACOPLAR EL MENÚ***************************************/
+    
+@media(min-width:700px){
+
+    .navegacion{
+        flex-direction: row;
+    }
+}
+    
+/**************************************************MAIN********************************************/
+    
+main{
+
+    margin-top: 100px;
+    text-align: center;
+    
+
+}
+
+main .main-imagen img{
+   
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5rem;
+    
+}
+
+main .main-imagen img{
+
+    height:  300px;
+
+}
+
+
+/**************************************IMAGENES DE COLUMNA***************************************/
+
+@media(min-width: 780px){
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr); /*primer valor columna, */
+    }
+}
+
+/***************************EDICIÓN DE LAS IMÁGENES DEL CONTENDOR Y COLUMNAS*********************/
+
+.wrapper{
+    
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    height: 40rem;
+    object-fit: cover; 
+}
+    
+.wrapper .contenedor{
+    
+    height: 30rem;
+    width: 50rem;
+    border-radius: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: cover;   
+}
+
+.wrapper img{
+
+    display:flex; /*filas*/
+    flex-direction: column;
+    align-items: center;
+    display: block;
+}
+
+.wrapper .contenedor img{
+
+    height: 35rem;
+    width: 35rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.contenedor-sombra{ /**Sombreado de las esquinas**/
+
+    -webkit-box-shadow: -27px -11px 61px -29px rgba(255, 0, 0, 0.98);
+    -moz-box-shadow: -27px -11px 61px -29px rgba(102, 255, 0, 0.98);
+    box-shadow: -27px -11px 61px -29px rgba(255, 230, 0, 0.98);
+    background-color: var(--arena);
+    padding: 10rem;
+    border-radius: 1.5rem;
+    margin: 4rem;
+}
+    
+
+/******************************************************LISTA*******************************************/
+    
+ol{
+    color: var(--blanco);
+    font-size: 2.5rem;
+    column-count: 2;
+    list-style: none;
+    text-align: center;
+}
+    
+ul{
+    color: var(--blanco);
+    font-size: 2.5rem;
+    list-style: none;
+    text-align: center;
+    text-align: justify;
+    margin: 2rem;
+    line-height: 150%;
+
+}
+
+/*******************************************TEXTO DE LA PÁGINA*******************************************/
+    
+h3{
+    font-size: 3.5rem;
+    text-align: center;    
+    color: var(--blanco);
+    font-family: 'DM Sans', sans-serif;
+}
+    
+p{
+    color: var(--blanco); /*color de texto*/
+    font-size: 2.5rem;
+    text-align: justify;
+    margin: 6rem;
+    line-height: 150%;
+}
+
+a{
+    color: var(--blanco);
+    text-decoration: none; /*Sirve para quitar la línea que se encuentra debajo del texto*/ 
+}
+    
+    
+/***************************************SECCIÓN DE VER MÁS******************************************************/
+   
+.enlace {
+        
+    display:inline;
+    border:1px;
+    padding: 1px;
+    margin: 2px;
+    text-decoration:underline;
+    background:none;
+    color:#0202be;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 1em;
+    line-height:1em;
+}
+      
+.enlace:hover {
+        
+    text-decoration:none;
+    color:#0f0141;
+    cursor:pointer;
+}
+
+/*!* Estilos para caja de enlaces relacionados La Gaceta */
+
+.caja-contenedora {
+    
+    width: 232px;
+    float: right;
+    border: 1px double var(--fluor);
+    margin: 5px 0 10px 20px;
+    background: var(--marino);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+}
+
+.caja-de-texto {  
+        
+    font-family: arial;
+    font-size: 17px;
+    line-height: 5px;
+    margin: 1;
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+    
+.caja-de-texto a {
+       
+    color:#FFF !important;
+    text-decoration:none;
+}
+    
+    
+/******************************************************FOOTER****************************************************/
+    
+
+footer{
+
+    margin-top: 100px;
+    text-align: auto;
+
+}
+
+
+footer{
+    
+    
+    background-color: var(--negro);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+    
+footer{
+    
+    color: var(--blanco);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    
+}
+
+
+
+
+
