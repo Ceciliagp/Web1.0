@@ -60,46 +60,24 @@ header .main-title{
     
 /****************************************NAVEGADOR PRINCIPAL*****************************************/
     
-.menu{
-    
-    background-color: var(--moradobajo);
-    margin: auto;
-
-}
-
-.navegacion a{
-    
+.navbar {
     padding: 1.5rem;
-    text-align: center;
-    color: var(--blanco);
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Jost', sans-serif;
-}
-        
-.navegacion a:hover{
-        
-    background-color: var(--pardo);
-    color: var(--negro);
-}
-        
-.navegacion {
-        
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-        
-}
-    
+    background-color: var(--moradobajo);
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+  }
+
+
+
+
+
+
 /********************************************ACOPLAR EL MENÚ***************************************/
     
-@media(min-width:700px){
 
-    .navegacion{
-        flex-direction: row;
-    }
-}
     
 /**************************************************MAIN********************************************/
     
@@ -202,15 +180,18 @@ ol{
 }
     
 ul{
-    color: var(--blanco);
-    font-size: 2.5rem;
+    color: var(--negro);
+    font-size: 2rem;
     list-style: none;
     text-align: center;
     text-align: justify;
     margin: 2rem;
     line-height: 150%;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
+
+
 
 /*******************************************TEXTO DE LA PÁGINA*******************************************/
     
@@ -222,7 +203,7 @@ h3{
 }
     
 p{
-    color: var(--blanco); /*color de texto*/
+    color: var(--negro); /*color de texto*/
     font-size: 2.5rem;
     text-align: justify;
     margin: 6rem;
@@ -237,57 +218,8 @@ a{
     
 /***************************************SECCIÓN DE VER MÁS******************************************************/
    
-.enlace {
-        
-    display:inline;
-    border:1px;
-    padding: 1px;
-    margin: 2px;
-    text-decoration:underline;
-    background:none;
-    color:#0202be;
-    font-family: 'Hachi Maru Pop', cursive;
-    font-size: 1em;
-    line-height:1em;
-}
-      
-.enlace:hover {
-        
-    text-decoration:none;
-    color:#0f0141;
-    cursor:pointer;
-}
 
-/*!* Estilos para caja de enlaces relacionados La Gaceta */
 
-.caja-contenedora {
-    
-    width: 232px;
-    float: right;
-    border: 1px double var(--fluor);
-    margin: 5px 0 10px 20px;
-    background: var(--marino);
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    color: #fff;
-}
-
-.caja-de-texto {  
-        
-    font-family: arial;
-    font-size: 17px;
-    line-height: 5px;
-    margin: 1;
-    padding: 10px 10px 10px 10px;
-    font-weight: bold;
-}
-    
-.caja-de-texto a {
-       
-    color:#FFF !important;
-    text-decoration:none;
-}
-    
     
 /******************************************************FOOTER****************************************************/
     

@@ -4,9 +4,21 @@
     <meta charset="UTF-8"> <!--CHARSET: sirve para el caracter, como por ejemplo los caracteres que se usan para el lenguaje-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---->
+
     <title>Animalía</title><!--Tittle: Sirve para poner el nombre del sitio web en la ventana-->
+    
+    <!---->
+
+    <link rel="icon" type="image/x-icon" href="images/iconodos.png">
+    
     <link rel="stylesheet" href="css/style.css"><!--LINK REL: Sirve para enlazar HTML Y CSS-->
     <link rel="stylesheet" href="/css/normalize.css">
+
+<!--BOOTSTRAP-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><!---Link para conectar la fuente de google fonts-->
@@ -34,39 +46,80 @@
 
 <!-------------------------------------NAVEGADOR PRINCIPAL------------------------------------------->
 
-<div class="menu">
-        <nav class="navegacion">
-   
-                <a href="index.html">Inicio</a>
-                <a href="salud.html">Animales para la salud</a>
-                <a href="viaje.html">Animales en el viaje</a>
-                <a href="adopcion.html">Adopción de animales</a>
-                <a href="cuidado.html">Cuidado de los animales</a>
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="images/iconotres.png" width="50" alt="Logo de la página web"> ANIMALIA
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="salud.html">Salud</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="viaje.html">Apoyo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="adopcion.html">Adopción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cuidado.html">Cuidado</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</nav>
-
-        
-<!-----------------------------------------MAIN-HEADER---------------------------------------------------->
-
-<main>
-<header>
-
-        <h1 class="main-title">MASCOTALANDIA</h1>
-
-
+  </nav>
+  
 
 <!----------------------------------------SECCIÓN IMAGEN-MAIN----------------------------------------->
+<main>
 
-<section class="main-imagen">
+<!----<section class="main-imagen">
 
     <div class="contenido-imagen">
             <img src="/images/Foto4.jpg" alt="">
     </div>
-        </section>
-    </header>
+        </section>-->
+    
+        <div class="clearfix">
+            <img src="images/pet-care.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+          
+
+<h3>¿QUÉ ES LA DOMESTICACIÓN?</h3>
+
+
+<p>
+  La domesticación es un proceso por medio del cual, una población de una especie animal específica 
+  se acopla al hombre y a una condición de cautividad, mediante una serie de transformaciones genéticas 
+  que ocurren a lo largo de las generaciones 
+  y a través de diversos procesos de aclimatación generados por el ambiente y constantes por generaciones.
+  </p>
+
+            <p>
+                Las mascotas son animales domésticos, también son llamados animales de compañía y como su nombre lo indica son 
+                conservados por sus dueños para formar parte de la familia, disminuir la soledad y traer la alegría a sus hogares. 
+                Las mascotas alegran nuestros días, nos ofrecen compañía y algunas de ellas incluso pueden llegar 
+                a ser aliadas para nosotros en la ejecución de tareas diarias si se les da un entrenamiento correcto.
+            </p>
+          
+          </div>
+
+
+
+
+
+       
+
+
+
 
 </main>
-
 <!---------------------------------------ÍNDICE CON ANCLAS-------------------------------------------->
 
 <!--<div class="menu">
@@ -103,7 +156,10 @@
 
 
 
- <h3>¿QUÉ SON SON LOS ANIMALES DOMÉSTICOS?</h3>
+
+
+
+ <!--<h3>¿QUÉ SON SON LOS ANIMALES DOMÉSTICOS?</h3>
 
 <P>Cuando hablamos de animales domésticos, nos referimos a aquellos animales que el ser humano fue 
 domesticando en su propio entorno.</P>
@@ -126,11 +182,11 @@ a la intervención del hombre, han cambiado su estilo de vida, su comportamiento
 <li>Se apegan sentimentalmente a los humanos con los cuales conviven.</li>
 <li>Aceptan los hábitos impuestos por sus dueños.</li>
 <li>Son útiles para la vida del ser humano, ya sea para la producción de materia prima (vacas, ovejas, etc.), 
-por seguridad (perros policías), compañía (mascotas), entre otros.</li>
+por seguridad (perros policías), compañía (mascotas), entre otros.</li>-->
 
 </ol>
 
-Animales de granja
+<!--Animales de granja
 Artículo principal: Animales de granja.
 Aquellos animales domésticos que el hombre ha incluido en su entorno para aprovecharse, de alguna manera, de sus propiedades. Estos animales se han adaptado a la presencia del hombre, llegando a interactuar con ellos.
 
@@ -142,7 +198,9 @@ La gallina es criada y domesticada en granjas para la obtención de huevos.
 Animales de compañía
 Estos animales domésticos tienen una interacción más “íntima” con el hombre. Por lo general, conviven en el mismo espacio y se relacionan sentimentalmente con sus dueños hasta formar parte, a menudo, del núcleo familiar.
 
-Los animales de compañía reciben un trato especial. Entre ellos, los más comunes son: gatos, perros, pericos, loros, conejos, hamsters, entre otros animales exóticos que se han ido sumando a la lista de animales domésticos, tales como la iguana, los chimpancés y otros tipos de monos.
+Los animales de compañía reciben un trato especial. Entre ellos, 
+los más comunes son: gatos, perros, pericos, loros, conejos, hamsters, entre otros animales exóticos 
+que se han ido sumando a la lista de animales domésticos, tales como la iguana, los chimpancés y otros tipos de monos.-->
 
 
 
@@ -354,17 +412,22 @@ Los animales de compañía reciben un trato especial. Entre ellos, los más comu
 </ol>
 
 
+
+
+
+
+
 <!---------------------------------------------BOTÓN DE VER MÁS----------------------------------------------->
 
-<div class="caja-contenedora">
-    <div class="caja-de-texto"> <!-- LINK Y EL TITULO DE NOTA 1 -->  
+ 
     
-                    <a href="mas.html">Leer más</a>
+                  
 
-            <br><br>
-        </div>
-    </div><!-- AQUÍ TERMINA LA CAJA -->
-</div><!-- AQUÍ TERMINA EL CONTENEDOR -->
+<a class="btn btn-primary" href="mas.html" role="button">Link</a>
+
+
+
+          
 
 </main><!--FIN-->
 
@@ -403,14 +466,12 @@ miembro más de nuestra familia, hasta el punto de estar muy pendientes de su bi
 
 <!-------------------------------------------------FOOTER-------------------------------------------------------->
 
-<main>
 
-<footer>
 
-@2023 Página web
-  
-</footer>  
-</main>
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
