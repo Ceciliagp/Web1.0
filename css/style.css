@@ -43,7 +43,7 @@ body{
     background-color: var(--gris);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to top, var (var(--gris))0%, var(--gris)100%);
+    background-image: linear-gradient(to top, var (var(--negro))0%, var(--negro)100%);
     margin: 0;
     margin-bottom: 40px;
 }
@@ -201,6 +201,16 @@ h3{
     color: var(--blanco);
     font-family: 'DM Sans', sans-serif;
 }
+
+h2{
+
+    font-size: 3.5rem;
+    text-align: center;    
+    color: var(--blanco);
+    font-family: 'DM Sans', sans-serif;
+
+
+}
     
 p{
     color: var(--negro); /*color de texto*/
@@ -216,41 +226,10 @@ a{
 }
     
     
-/***************************************SECCIÓN DE VER MÁS******************************************************/
-   
-
 
     
-/******************************************************FOOTER****************************************************/
-    
 
-footer{
-
-    margin-top: 100px;
-    text-align: auto;
-
-}
-
-
-footer{
-    
-    
-    background-color: var(--negro);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-    
-footer{
-    
-    color: var(--blanco);
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    
-}
+  
 
 
 

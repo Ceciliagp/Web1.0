@@ -17,86 +17,108 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
 
+    <!--BOOTSTRAP-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 <body><!--Body: Sirve para toda la información que el usuario puede visualizar-->
 
 
 <!-------------------------------------NAVEGADOR PRINCIPAL------------------------------------------->
 
-<div class="menu">
-    <nav class="navegacion">
-
-            <a href="index.html">Inicio</a>
-            <a href="viaje.html">Animales en el viaje</a>
-            <a href="adopcion.html">Adopción de animales</a>
-            <a href="">Cuidado de los animales</a>
-</div>
-</nav>
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="images/iconotres.png" width="50" alt="Logo de la página web"> ANIMALIA
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="viaje.html">Apoyo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="adopcion.html">Adopción</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cuidado.html">Cuidado</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     
-<!-----------------------------------------MAIN-HEADER---------------------------------------------------->
 
-<main>
-<header>
-
-    <h1 class="main-title">MASCOTALANDIA</h1>
-
-
-
-<!----------------------------------------SECCIÓN IMAGEN-MAIN----------------------------------------->
-
-<section class="main-imagen">
-
-<div class="contenido-imagen">
-        <img src="/images/Foto4.jpg" alt="">
-</div>
-    </section>
-</header>
-
-</main>
 
 <!--PÁRRAFOS-->
 
 
-<h3>ANIMALES PARA LA SALUD</h3>
 
 
-<h3>¿POR QUÉ CONOCER A LOS ANIMALES?</h3>
+  
+  <main>
+  
+  <div class="clearfix">
+    <img src="images/animal-care (1).png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+  
 
 
-<p>  <!---Le daremos un nombre propio-->
+    <h3>¿POR QUÉ CONOCER A LOS ANIMALES?</h3>
     
-    El amor incondicional de una mascota puede brindar más que compañía. 
-    Las mascotas también pueden disminuir el estrés, mejorar la salud del corazón e, incluso, 
-    ayudar a los niños con sus habilidades emocionales y sociales.
+    
+    <p>  <!---Le daremos un nombre propio-->
+        
+        El amor incondicional de una mascota puede brindar más que compañía. 
+        Las mascotas también pueden disminuir el estrés, mejorar la salud del corazón e, incluso, 
+        ayudar a los niños con sus habilidades emocionales y sociales.
+    
+    </p>
+    
+    
+    <h3>EFECTOS EN LA SALUD</h3>
+    
+    <p>
+    La investigación sobre las interacciones humano-animal es aún relativamente nueva. Algunos estudios han mostrado efectos positivos para la salud, pero los resultados fueron mixtos.
+    
+    Se ha demostrado que la interacción con animales disminuye los niveles de cortisol 
+    (una hormona relacionada con el estrés) y disminuye la presión arterial. 
+    Otros estudios han descubierto que los animales pueden reducir la soledad, 
+    aumentar los sentimientos de apoyo social y mejorar su estado de ánimo.
+    
+    </p>
+    
 
-</p>
 
-
-<h3>EFECTOS EN LA SALUD</h3>
-
-<p>
-La investigación sobre las interacciones humano-animal es aún relativamente nueva. Algunos estudios han mostrado efectos positivos para la salud, pero los resultados fueron mixtos.
-
-Se ha demostrado que la interacción con animales disminuye los niveles de cortisol 
-(una hormona relacionada con el estrés) y disminuye la presión arterial. 
-Otros estudios han descubierto que los animales pueden reducir la soledad, 
-aumentar los sentimientos de apoyo social y mejorar su estado de ánimo.
-
-</p>
+</main>
 
 
 
 <!-------------------------------------------------FOOTER-------------------------------------------------------->
 
-<main>
 
-    <footer>
+<footer class="text-center text-white" style="background-color: #000000;">
+   
+    <!-- Copyright -->
+    <div class="text-center  p-5" style="color: rgb(255, 255, 255);">
+      © 2023 Copyright: Creado por Cecilia Pacheco 
     
-    @2023 Página web
-      
-    </footer>  
-    </main>
-      
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+  crossorigin="anonymous"></script>
+
+
 </body>
 </html>

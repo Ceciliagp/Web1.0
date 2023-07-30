@@ -17,71 +17,76 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
 
+    <!--BOOTSTRAP-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 <body><!--Body: Sirve para toda la información que el usuario puede visualizar-->
     
 
 <!-------------------------------------NAVEGADOR PRINCIPAL------------------------------------------->
 
-<div class="menu">
-    <nav class="navegacion">
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="images/iconotres.png" width="50" alt="Logo de la página web"> ANIMALIA
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="salud.html">Salud</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="viaje.html">Apoyo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cuidado.html">Cuidado</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <a href="index.html">Inicio</a>
-            <a href="salud.html">Animales para la salud</a>
-            <a href="viaje.html">Animales en el viaje</a>
-            <a href="">Cuidado de los animales</a>
-</div>
-</nav>
+  <main>
+<!-------------------------------------------PÁRRAFOS---------------------------------------------->
 
+<div class="clearfix">
+    <img src="images/animal-shelter.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="adopcion">
     
-<!-----------------------------------------MAIN-HEADER---------------------------------------------------->
-
-<main>
-<header>
-
-    <h1 class="main-title">MASCOTALANDIA</h1>
-
-
-
-<!----------------------------------------SECCIÓN IMAGEN-MAIN----------------------------------------->
-
-<section class="main-imagen">
-
-<div class="contenido-imagen">
-        <img src="/images/Foto4.jpg" alt="">
-</div>
-    </section>
-</header>
-
-</main>
-
-<h3>ANIMALES EN ADOPCIÓN</h3>
-
-
-
 <h3>¿Por qué es mejor adoptar que comprar perros?</h3>
 
-<p>
+<p>Le das una segunda oportunidad: Gran parte de los perros que están en adopción antes se encontraban es 
+situaciones de abandono, vivían en la calle o sufrían maltrato, por lo tanto, cuando le abres la puerta de 
+tu casa y lo haces parte de tu familia, le permites tener la vida que merece en un hogar estable lleno de 
+amor y cuidado.</p>
+  
+</main>
 
-Le das una segunda oportunidad
-
-Gran parte de los perros que están en adopción antes se encontraban es situaciones de abandono, 
-vivían en la calle o sufrían maltrato, por lo tanto, cuando le abres la puerta de tu casa y 
-lo haces parte de tu familia, le permites tener la vida que merece en un hogar estable lleno de amor y 
-cuidado.
-
-</p>
 
 <!-------------------------------------------------FOOTER-------------------------------------------------------->
 
-<main>
-
-<footer>
-
-@2023 Página web
+<footer class="text-center" style="background-color: #000000;">
+   
+<!-----------------------------------------------Copyright------------------------------------------------------->
+    
+<div class="text-center p-5" style="color: rgb(255, 255, 255);">
+      
+    © 2023 Copyright: Creado por Cecilia Pacheco 
+    
+    </div>
+</footer>
   
-</footer>  
-</main>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+crossorigin="anonymous"></script>
 
 </body>
 </html>
